@@ -1,0 +1,1 @@
+web: gunicorn licence_plate_detection.wsgi --log-file -

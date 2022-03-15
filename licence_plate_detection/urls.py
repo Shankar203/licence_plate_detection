@@ -17,6 +17,5 @@ from django.contrib import admin
 from django.urls import path
 from .views import Detect
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('detect/',Detect.as_view(), name='detect')
 ]

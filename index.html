@@ -27,7 +27,8 @@
             <form enctype="multipart/form-data" id="form-id" onsubmit="getResults(event)">
                 <label for="form-file" class="form-label"></label>
                 <input class="form-control" type="file" id="form-file" accept="image/*" name="image">
-                <button class="btn btn-primary w-100 my-4" style="display: none;" type="button" id="submit-disabled" disabled>
+                <button class="btn btn-primary w-100 my-4" style="display: none;" type="button" id="submit-disabled"
+                    disabled>
                     <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                     Loading...
                 </button>
@@ -68,4 +69,5 @@
         document.getElementById("form-submit").disabled = false;
     }
 </script>
+
 </html>

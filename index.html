@@ -60,7 +60,7 @@
             method: 'POST',
             body: formData,
         };
-        const res = await fetch('http://localhost:8000/detect/', options)
+        const res = await fetch('https://licenceplatedetection-production.up.railway.app/detect/', options)
         const r = await res.json();
         document.getElementById("form-submit").style.display = "block";
         document.getElementById("submit-disabled").style.display = "none";

@@ -28,13 +28,13 @@ sentencepiece
 django-cors-headers
 
 # django   ------------------------------------
-
 Django
 django-filter
 django-heroku
 django-import-export
 djangorestframework
 gunicorn
+
 # Export --------------------------------------
 # coremltools>=4.1  # CoreML export
 # onnx>=1.9.0  # ONNX export

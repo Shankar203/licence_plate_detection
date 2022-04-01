@@ -1,17 +1,17 @@
 import cv2
 import numpy as np
 import torch
-from transformers import TrOCRProcessor, VisionEncoderDecoderModel
+from transformers import AutoProcessor, VisionEncoderDecoderModel
 
 YOLO_CKPT_PATH = "yolov5/runs/train/exp/weights/best.pt"
-TROCR_CKPT_PATH = "microsoft/trocr-small-printed"
+TROCR_CKPT_PATH = "trocr-small-printed"
 yolov5 = torch.hub.load('yolov5', 'custom',
                         path=YOLO_CKPT_PATH,
                         source='local',
                         force_reload=True,
                         verbose=False)
-model = VisionEncoderDecoderModel.from_pretrained("microsoft/trocr-small-printed", cache_dir="trocr-small-printed")
-processor = TrOCRProcessor.from_pretrained("microsoft/trocr-small-printed", cache_dir="trocr-small-printed")
+model = VisionEncoderDecoderModel.from_pretrained(TROCR_CKPT_PATH)
+processor = AutoProcessor.from_pretrained(TROCR_CKPT_PATH)
 
 
 def detect(img):

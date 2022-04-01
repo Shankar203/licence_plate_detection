@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a19ab920ed4d3cbe0094e1fc1eb0dec30bfc7add1e524524b2f1a0d696a64c9
-size 299
+"""Perform test request"""
+import pprint
+
+import requests
+
+DETECTION_URL = "http://localhost:5000/v1/object-detection/yolov5s"
+TEST_IMAGE = "zidane.jpg"
+
+image_data = open(TEST_IMAGE, "rb").read()
+
+response = requests.post(DETECTION_URL, files={"image": image_data}).json()
+
+pprint.pprint(response)

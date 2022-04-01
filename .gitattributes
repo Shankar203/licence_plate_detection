@@ -1,2 +1,2 @@
-trocr-small-printed/** filter=lfs diff=lfs merge=lfs -text
-yolov5/** filter=lfs diff=lfs merge=lfs -text
+trocr-small-printed/pytorch_model.bin filter=lfs diff=lfs merge=lfs -text
+yolov5/weights/best.pt filter=lfs diff=lfs merge=lfs -text

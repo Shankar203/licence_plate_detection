@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8245f9ec453c62b2f7e3f71e34be67431910ed2c0ca73d6ad6c8b8b4eb4ea534
-size 174
+runtime: custom
+env: flex
+
+service: yolov5app
+
+liveness_check:
+  initial_delay_sec: 600
+
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 4
+  disk_size_gb: 20

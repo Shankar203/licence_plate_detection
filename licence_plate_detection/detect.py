@@ -3,7 +3,7 @@ import numpy as np
 import torch
 from transformers import AutoProcessor, VisionEncoderDecoderModel
 
-YOLO_CKPT_PATH = "yolov5/runs/train/exp/weights/best.pt"
+YOLO_CKPT_PATH = "yolov5/weights/best.pt"
 TROCR_CKPT_PATH = "trocr-small-printed"
 yolov5 = torch.hub.load('yolov5', 'custom',
                         path=YOLO_CKPT_PATH,

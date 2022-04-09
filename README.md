@@ -6,4 +6,4 @@
 - python manage.py runserver
 
 # licence_plate_detection (globally)
-go to https://shankar203.github.io/licence_plate_detection
+go to https://shankar203.github.io/licence_plate_detection/
